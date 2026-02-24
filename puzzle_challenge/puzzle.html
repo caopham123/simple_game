@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Puzzle Game</title>
+  </head>
+  <body>
+    <div class="game-container">
+      <h1>Sliding Puzzle</h1>
+
+      <div class="controls">
+        <label for="difficulty">Chọn độ khó:</label>
+        <select id="difficulty">
+          <option value="3">3 x 3</option>
+          <option value="4">4 x 4</option>
+          <option value="5">5 x 5</option>
+        </select>
+
+        <button id="start-btn">Bắt đầu</button>
+      </div>
+
+      <div class="score-board">Đã chạy: <span id="turn-count">0</span></div>
+
+      <!-- The Game Board -->
+      <div id="board"></div>
+
+      <p id="message"></p>
+    </div>
+
+    <script src="puzzle.js"></script>
+  </body>
+</html>
